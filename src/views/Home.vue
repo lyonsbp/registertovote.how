@@ -13,6 +13,8 @@
               <v-flex>
                 <div class="subheading">
                   This form will guide you through the process of registering to vote in the USA.
+                  I'm kinda too stoned rn to finish it all, but I promise I'll get to it this weekend.
+                  :)
                 </div>
               </v-flex>
               <v-divider></v-divider>
