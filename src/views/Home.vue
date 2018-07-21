@@ -31,6 +31,7 @@
             <v-layout row justify-end>
               <v-card-actions>
                 <v-btn
+                  @click="visitSite()"
                   color="primary">
                   Next
                 </v-btn>
@@ -55,6 +56,11 @@ export default {
           url: 'https://www.dmv.org/mi-michigan/voter-registration.php'
         }
       ]
+    }
+  },
+  methods: {
+    visitSite () {
+      window.open(this.selectedState, '_blank')
     }
   }
 }
