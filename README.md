@@ -1,4 +1,4 @@
-# kanban-offline
+# registertovote.how
 
 ## Project setup
 ```
