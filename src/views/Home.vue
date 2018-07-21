@@ -2,19 +2,63 @@
   <v-container fluid>
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
-        <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
-        <blockquote>
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
+        <v-flex xs12 lg8>
+          <v-card width="100%">
+            <v-card-title
+              primary-title
+              class="display-1 primary white--text">
+              Let's go!
+            </v-card-title>
+            <v-card-text>
+              <v-flex>
+                <div class="subheading">
+                  This form will guide you through the process of registering to vote in the USA.
+                </div>
+              </v-flex>
+              <v-divider></v-divider>
+              <v-flex>
+                <v-select
+                  v-model="selectedState"
+                  :items="stateList"
+                  item-text="name"
+                  item-value="url"
+                  outline
+                  label="Select a state"
+                  class="mt-2">
+               </v-select>
+              </v-flex>
+            </v-card-text>
+            <v-layout row justify-end>
+              <v-card-actions>
+                <v-btn
+                  color="primary">
+                  Next
+                </v-btn>
+              </v-card-actions>
+            </v-layout>
+         </v-card>
+        </v-flex>
       </v-layout>
     </v-slide-y-transition>
   </v-container>
 </template>
+
+<script>
+export default {
+  components: {},
+  data () {
+    return {
+      selectedState: null,
+      stateList: [
+        {
+          name: 'Michigan',
+          url: 'https://www.dmv.org/mi-michigan/voter-registration.php'
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
