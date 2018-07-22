@@ -32,6 +32,7 @@
               <v-card-actions>
                 <v-btn
                   @click="visitSite()"
+                  :disabled="!selectedState"
                   color="primary">
                   Next
                 </v-btn>
