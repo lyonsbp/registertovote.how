@@ -63,3 +63,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+ #app {
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+ }
+</style>
