@@ -18,7 +18,7 @@
               </v-flex>
               <v-divider></v-divider>
               <v-flex>
-                <v-select
+                <v-autocomplete
                   v-model="selectedState"
                   :items="stateList"
                   item-text="name"
@@ -26,7 +26,7 @@
                   outline
                   label="Select a state"
                   class="mt-2">
-               </v-select>
+               </v-autocomplete>
               </v-flex>
             </v-card-text>
             <v-layout row justify-end>
@@ -314,6 +314,9 @@ export default {
   methods: {
     visitSite () {
       window.open(this.selectedState, '_blank')
+    },
+    filterStates (event) {
+      console.log(event + 'a')
     }
   }
 }

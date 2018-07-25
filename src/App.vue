@@ -62,6 +62,9 @@ export default {
       rightDrawer: false,
       title: 'registertovote.how'
     }
+  },
+  methods: {
+
   }
 }
 </script>
