@@ -12,7 +12,8 @@
             <v-card-text>
               <v-flex>
                 <div class="subheading">
-                  This form will guide you through the process of registering to vote in the USA.
+                  <p>This form will take you to the voter registration form (online version if available).</p>
+                  <p>Future versions of the site will also provided localized election information.</p>
                 </div>
               </v-flex>
               <v-divider></v-divider>
@@ -34,7 +35,7 @@
                   @click="visitSite()"
                   :disabled="!selectedState"
                   color="primary">
-                  Next
+                  Go!
                 </v-btn>
               </v-card-actions>
             </v-layout>
