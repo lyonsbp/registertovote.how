@@ -161,7 +161,7 @@ export default {
         {
           'name': 'Massachusetts',
           'abbreviation': 'MA',
-          'url': 'www.sec.state.ma.us/ovr/'
+          'url': 'https://www.sec.state.ma.us/ovr/'
         },
         {
           'name': 'Michigan',
@@ -171,12 +171,12 @@ export default {
         {
           'name': 'Minnesota',
           'abbreviation': 'MN',
-          'url': 'vote.minneapolismn.gov/voters/register'
+          'url': 'http://vote.minneapolismn.gov/voters/register'
         },
         {
           'name': 'Mississippi',
           'abbreviation': 'MS',
-          'url': 'www.sos.ms.gov/Elections-Voting/Pages/Voter-Registration-Information.aspx'
+          'url': 'https://www.sos.ms.gov/Elections-Voting/Pages/Voter-Registration-Information.aspx'
         },
         {
           'name': 'Missouri',
@@ -211,7 +211,7 @@ export default {
         {
           'name': 'New Mexico',
           'abbreviation': 'NM',
-          'url': 'www.sos.state.nm.us/Voter_Information/Voter_Registration_Information.aspx'
+          'url': 'http://www.sos.state.nm.us/Voter_Information/Voter_Registration_Information.aspx'
         },
         {
           'name': 'New York',
