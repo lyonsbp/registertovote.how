@@ -87,7 +87,7 @@ a {
 
 // from GitHub Corners - http://tholman.com/github-corners/
 .github-corner-svg {
-  fill: #151513;
+  fill: #3c76d2;
   color: #fff;
   position: absolute;
   bottom: 0;
