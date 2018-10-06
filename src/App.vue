@@ -73,4 +73,8 @@ export default {
  #app {
   background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
  }
+
+ a {
+  color: #2972C2;
+ }
 </style>
