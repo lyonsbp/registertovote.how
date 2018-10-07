@@ -80,7 +80,7 @@ export default {
   },
   methods: {
     navClick (route) {
-      window.location.href = route
+      this.$router.push(route)
     }
   }
 }

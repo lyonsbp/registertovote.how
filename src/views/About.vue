@@ -13,13 +13,13 @@
               <v-flex>
                 <div class="subheading">
                   <p>
-                    Registering to vote in the United States can be confusing! 
+                    Registering to vote in the United States can be confusing!
                     <a href="/">registertovote.how</a> hopes to take away some of the frustrations,
                     by providing visitors a link to their states online voting registration (when available).
                   </p>
 
                   <p>
-                    The web site is open source and contributions, fixes, ideas, etc are welcome!  
+                    The web site is open source and contributions, fixes, ideas, etc are welcome!
                     Stop by at <a href="https://github.com/lyonsbp/registertovote.how" target="_blank">https://github.com/lyonsbp/registertovote.how</a>
                   </p>
                 </div>
