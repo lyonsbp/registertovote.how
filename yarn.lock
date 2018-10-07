@@ -9513,10 +9513,10 @@ vue@^2.5.16:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.16.tgz#07edb75e8412aaeed871ebafa99f4672584a0085"
   integrity sha512-/ffmsiVuPC8PsWcFkZngdpas19ABm5mh2wA7iDqcltyCTwlgZjHGeJYOXkBMo422iPwIcviOtrTCUpSfXmToLQ==
 
-vuetify@^1.0.19:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.1.7.tgz#5d511d03397723961bace163a639f86e29dbe582"
-  integrity sha512-e2CNuOikEnaIsIrv//cEIzsXkxwf4VQZTIB9TJkd1Z+uUKF5GLYHcHJKP4HrEC22FqvpSnbsN0ShYJ6kEUfnmg==
+vuetify@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.2.6.tgz#e94e4b169544b326eabf08636006968c37e98f28"
+  integrity sha512-/5xFgawE1GBVDrMiTJf5P1+YP4mMAg/xni+2M2btwJI8842EWD0+DKC12icuPTrzWdnc8+hXqoubi4+qYz6SSg==
 
 vuex@^3.0.1:
   version "3.0.1"
