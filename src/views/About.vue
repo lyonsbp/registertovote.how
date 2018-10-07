@@ -19,7 +19,7 @@
                   </p>
 
                   <p>
-                    The web site is open source and contributions, fixes, ideas, etc are welcome!  
+                    The web site is open source and contributions, fixes, ideas, etc are welcome!
                     Stop by at <a href="https://github.com/lyonsbp/registertovote.how" target="_blank">https://github.com/lyonsbp/registertovote.how</a>
                   </p>
                 </div>
