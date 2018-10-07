@@ -15,12 +15,14 @@
           v-for="(item, i) in items"
           :key="i"
         >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon"></v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title"></v-list-tile-title>
-          </v-list-tile-content>
+          <v-list-tile @click="navClick(item.route)">
+            <v-list-tile-action>
+              <v-icon v-html="item.icon"></v-icon>
+            </v-list-tile-action>
+            <v-list-tile-content>
+              <v-list-tile-title v-text="item.title"></v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
@@ -61,8 +63,14 @@ export default {
       drawer: false,
       fixed: false,
       items: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
+        icon: 'home',
+        title: 'Home',
+        route: '/'
+      },
+      {
+        icon: 'info',
+        title: 'About',
+        route: '/about'
       }],
       miniVariant: false,
       right: true,
@@ -71,7 +79,9 @@ export default {
     }
   },
   methods: {
-
+    navClick (route) {
+      window.location.href = route
+    }
   }
 }
 </script>
