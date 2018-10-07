@@ -13,7 +13,7 @@
               <v-flex>
                 <div class="subheading">
                   <p>
-                    Registering to vote in the United States can be confusing! 
+                    Registering to vote in the United States can be confusing!
                     <a href="/">registertovote.how</a> hopes to take away some of the frustrations,
                     by providing visitors a link to their states online voting registration (when available).
                   </p>
