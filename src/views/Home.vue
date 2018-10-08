@@ -25,7 +25,8 @@
                   item-value="url"
                   outline
                   label="Select a state"
-                  class="mt-2">
+                  class="mt-2"
+                  ref="autoComplete">
                </v-autocomplete>
               </v-flex>
             </v-card-text>
@@ -36,6 +37,11 @@
                   :disabled="!selectedState"
                   color="primary">
                   Go!
+                </v-btn>
+                <v-btn
+                  @click="logRef()"
+                  color="primary">
+                  Log
                 </v-btn>
               </v-card-actions>
             </v-layout>
@@ -314,9 +320,11 @@ export default {
   methods: {
     visitSite () {
       window.open(this.selectedState, '_blank')
-    },
-    filterStates (event) {
-      console.log(event + 'a')
+    }
+  },
+  computed: {
+    filteredItems () {
+      return this.$refs.autoComplete.filteredItems
     }
   }
 }
