@@ -6,7 +6,7 @@
 
 <script>
 
-import Map from "@/components/Map.vue";
+import Map from '@/components/Map.vue'
 
 export default {
   components: {
