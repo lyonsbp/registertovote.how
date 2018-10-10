@@ -68,11 +68,6 @@ export default {
         route: '/'
       },
       {
-        icon: 'map',
-        title: 'Map',
-        route: '/map'
-      },
-      {
         icon: 'info',
         title: 'About',
         route: '/about'
