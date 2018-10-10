@@ -18,13 +18,13 @@ export default {
   data () {
     return {
       chartData: [
-        ['State', 'Select'],
-        //['US-MI', 0],
+        ['State', 'Select']
+        // ['US-MI', 0],
       ],
       chartOptions: {
         region: 'US',
         displayMode: 'regions',
-        resolution: 'provinces',
+        resolution: 'provinces'
       },
       chartEvents: {
         'regionClick': (region) => {
@@ -35,11 +35,11 @@ export default {
   },
   methods: {
     visitSite (url) {
-      if (url) { 
+      if (url) {
         window.open(url, '_blank')
       }
     }
-  },
+  }
 }
 </script>
 

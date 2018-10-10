@@ -52,7 +52,7 @@ export default {
   components: {},
   data () {
     return {
-      selectedState: null,
+      selectedState: null
     }
   },
   methods: {

@@ -271,11 +271,10 @@ export default new Vuex.Store({
   },
   getters: {
     getStateList: state => {
-        return state.stateList
+      return state.stateList
     },
     getStateUrlByRegion: (state) => (region) => {
-
-      const stateObject = state.stateList.find(item => item.abbreviation === region.split("-")[1])
+      const stateObject = state.stateList.find(item => item.abbreviation === region.split('-')[1])
 
       return (stateObject) ? stateObject.url : null
     }
