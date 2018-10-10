@@ -17,10 +17,9 @@ export default {
   },
   data () {
     return {
-      placehoolder: null,
       chartData: [
         ['State', 'Select'],
-        ['US-MI', 0],
+        //['US-MI', 0],
       ],
       chartOptions: {
         region: 'US',
@@ -29,13 +28,18 @@ export default {
       },
       chartEvents: {
         'regionClick': (region) => {
-          console.log(region)
+          this.visitSite(this.$store.getters.getStateUrlByRegion(region.region))
         }
       }
     }
   },
   methods: {
-  }
+    visitSite (url) {
+      if (url) { 
+        window.open(url, '_blank')
+      }
+    }
+  },
 }
 </script>
 
