@@ -38,11 +38,6 @@
                   color="primary">
                   Go!
                 </v-btn>
-                <v-btn
-                  @click="logRef()"
-                  color="primary">
-                  Log
-                </v-btn>
               </v-card-actions>
             </v-layout>
          </v-card>
