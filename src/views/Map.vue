@@ -1,6 +1,26 @@
 <template>
   <v-container>
-    <Map></Map>
+    <v-layout column align-center>
+      <v-card width="100%">
+        <v-card-title
+          primary-title
+          class="display-1 primary white--text">
+          Let's go!
+        </v-card-title>
+        <v-card-text>
+          <v-flex>
+            <div class="subheading">
+              <p>Clicking a state on the map will take you to the voter registration form (online version if available).</p>
+              <p>Future versions of the site will also provided localized election information.</p>
+            </div>
+          </v-flex>
+          <v-divider></v-divider>
+          <v-flex>
+            <Map></Map>
+          </v-flex>
+        </v-card-text>
+      </v-card>
+    </v-layout>
   </v-container>
 </template>
 
