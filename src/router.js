@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
-import Map from './views/Map.vue'
+import VotingMap from './views/VotingMap.vue'
 
 Vue.use(Router)
 
@@ -22,7 +22,12 @@ export default new Router({
     {
       path: '/map',
       name: 'map',
-      component: Map
+      component: VotingMap
+    },
+    {
+      path: '/unemployment',
+      name: 'unemployment',
+      component: VotingMap
     }
   ]
 })
