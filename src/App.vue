@@ -62,7 +62,7 @@
       <router-view />
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2018</span>
+      <span>&copy; 2020</span>
       <v-spacer></v-spacer>
       <!-- <a href="https://github.com/lyonsbp/registertovote.how">Github repo</a> -->
     </v-footer>
