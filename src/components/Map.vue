@@ -8,33 +8,37 @@
 </template>
 
 <script>
-
 import { GChart } from 'vue-google-charts'
 
 export default {
   components: {
     GChart
   },
-  data () {
+  props: {
+    urlKey: {
+      type: String,
+      required: true
+    }
+  },
+  data() {
     return {
-      chartData: [
-        ['State', 'Select']
-        // ['US-MI', 0],
-      ],
+      chartData: [['State', 'Select']],
       chartOptions: {
         region: 'US',
         displayMode: 'regions',
         resolution: 'provinces'
       },
       chartEvents: {
-        'regionClick': (region) => {
-          this.visitSite(this.$store.getters.getStateUrlByRegion(region.region))
+        regionClick: region => {
+          this.visitSite(
+            this.$store.getters.getStateUrlByRegion(region.region, this.urlKey)
+          )
         }
       }
     }
   },
   methods: {
-    visitSite (url) {
+    visitSite(url) {
       if (url) {
         window.open(url, '_blank')
       }
@@ -43,6 +47,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
