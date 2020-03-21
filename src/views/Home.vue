@@ -4,16 +4,20 @@
       <v-layout column align-center>
         <v-flex xs12 lg8>
           <v-card width="100%">
-            <v-card-title
-              primary-title
-              class="display-1 primary white--text">
+            <v-card-title primary-title class="display-1 primary white--text">
               Let's go!
             </v-card-title>
             <v-card-text>
               <v-flex>
                 <div class="subheading">
-                  <p>This form will take you to the voter registration form (online version if available).</p>
-                  <p>Future versions of the site will also provided localized election information.</p>
+                  <p>
+                    This form will take you to the voter registration form
+                    (online version if available).
+                  </p>
+                  <p>
+                    Future versions of the site will also provided localized
+                    election information.
+                  </p>
                 </div>
               </v-flex>
               <v-divider></v-divider>
@@ -22,12 +26,13 @@
                   v-model="selectedState"
                   :items="stateList"
                   item-text="name"
-                  item-value="url"
+                  item-value="voteUrl"
                   outline
                   label="Select a state"
                   class="mt-2"
-                  ref="autoComplete">
-               </v-autocomplete>
+                  ref="autoComplete"
+                >
+                </v-autocomplete>
               </v-flex>
             </v-card-text>
             <v-layout row justify-end>
@@ -35,12 +40,13 @@
                 <v-btn
                   @click="visitSite()"
                   :disabled="!selectedState"
-                  color="primary">
+                  color="primary"
+                >
                   Go!
                 </v-btn>
               </v-card-actions>
             </v-layout>
-         </v-card>
+          </v-card>
         </v-flex>
       </v-layout>
     </v-slide-y-transition>
@@ -50,21 +56,21 @@
 <script>
 export default {
   components: {},
-  data () {
+  data() {
     return {
       selectedState: null
     }
   },
   methods: {
-    visitSite () {
+    visitSite() {
       window.open(this.selectedState, '_blank')
     }
   },
   computed: {
-    filteredItems () {
+    filteredItems() {
       return this.$refs.autoComplete.filteredItems
     },
-    stateList () {
+    stateList() {
       return this.$store.getters.getStateList
     }
   }
@@ -73,7 +79,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {

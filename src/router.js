@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import VotingMap from './views/VotingMap.vue'
+import UnemploymentMap from './views/UnemploymentMap.vue'
 
 Vue.use(Router)
 
@@ -25,9 +26,9 @@ export default new Router({
       component: VotingMap
     },
     {
-      path: '/unemployment',
-      name: 'unemployment',
-      component: VotingMap
+      path: '/corona-virus',
+      name: 'corona',
+      component: UnemploymentMap
     }
   ]
 })
